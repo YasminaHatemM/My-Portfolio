@@ -1,0 +1,347 @@
+@media only screen and (max-width: 600px) {
+  /*-------------------------------Global--------------------------------*/
+  #container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 12vh auto;
+    grid-template-areas:
+      "hd"
+      "mn"
+      /*"hd__sect03"*/;
+  }
+
+  /*-------------------------------Header--------------------------------*/
+  #header {
+    /* position: fixed; */
+    height: 12vh;
+    grid-area: hd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*--------------------------------Logo---------------------------------*/
+  #hd__sect01 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo {
+    width: 50px;
+    height: 50px;
+  }
+  /*------------------------------nav-bar-------------------------------*/
+  #hd__sect02 {
+    margin-right: 15vw ;
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 1000;
+  }
+  #nav__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "h__i p__i" "s__i c__i";
+    list-style: none;
+  }
+  .list__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    width: 90px;
+    padding: 6px;
+    margin: 4px;
+  }
+
+  #Home__icon {
+    grid-area: h__i;
+  }
+  #Projects__icon {
+    grid-area: p__i;
+  }
+  #Skills__icon {
+    grid-area: s__i;
+  }
+  #contact__icon {
+    grid-area: c__i;
+  }
+
+  /*------------------------------contacts-------------------------------*/
+  #hd__sect03 {
+    display: none ;
+    grid-area: hd__sect03;
+  }
+
+  #small__footer {
+    grid-area: ft;
+    width: 100vw;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  .contact__icons2 {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border: 4px solid #98605f;
+    border-radius: 50px;
+    margin: 3px;
+  }
+
+  /*--------------------------------Main---------------------------------*/
+  #main {
+    grid-area: mn;
+  }
+  /*--------------------------------page1--------------------------------*/
+  
+  #main__sect01 {
+    color:  #24527a;
+  }
+
+  #sect01__container{
+    color:  #24527a;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 0.6fr 1fr 1fr;
+    grid-template-areas: 
+    "main__t main__img"
+    "main__j main__img" 
+    "main__a main__a";
+    font-size: 20px;
+    text-align: center;
+    place-items: center; 
+    background-color: #e0ebeb;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 10px;
+  }
+
+
+  #title {
+    margin-top:5vh ;
+    grid-area:main__t ;
+    font-size: 25px;
+    font-weight: 1000;
+    
+  }
+  #job {
+    grid-area:main__j ;
+    font-size: 20px;
+    font-weight: 1000;
+  
+  }
+  #about {  
+    grid-area:main__a ;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: justify;
+    padding: 0PX 10PX;
+  }
+
+  #sect01__img {
+    grid-area:main__img ;
+    align-items: center;
+    width: 120px;
+    border-radius: 20px;
+    border: #a7bcb9 10px solid;
+  
+  }
+  /*--------------------------------page2--------------------------------*/
+  #main__sect02 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-areas:
+      "t2 t2 "
+      "p1 p2 "
+      "p3 p4 "
+      "p5 p6 ";
+    justify-items: center;
+    background-color: #e0ebeb;
+    margin: 10px;
+    border-radius: 25px;
+  }
+  #sect02__title {
+    grid-area: t2;
+    border: #5dacbd 4px solid;
+    background-color: #24527a;
+    color: #e0ebeb;    border-radius: 50px;
+    padding: 20px;
+    margin: 20px;
+    
+    width: 70%;
+    text-align: center;
+  }  
+  .projects {
+    background-color: #ffffff;
+    border: #24527a 3px solid;
+    border-radius: 25px;
+    height: 130px;
+    width: 130px;
+  }
+  #p01__card {
+    grid-area: p1;
+  }
+  #p02__card {
+    grid-area: p2;
+  }
+  #p03__card {
+    grid-area: p3;
+  }
+  #p04__card {
+    grid-area: p4;
+  }
+  #p05__card {
+    grid-area: p5;
+  }
+  #p06__card {
+    grid-area: p6;
+  }
+  .p_cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: #24527a;
+    font-size: 15px;
+    font-weight: 1000;
+  }
+
+  button{
+    padding: 10px;
+    font-weight: bold;
+    border :none;
+    font-size: 15px;
+    border-bottom: #5dacbd 4px solid;
+    background-color: #24527a;
+        color: #e0ebeb;    border-radius: 20px;
+ 
+  }
+  button :focus{
+    outline: none;
+  }
+  /*--------------------------------page3--------------------------------*/
+  #main__sect03 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "t2 t2 t2 "
+      "s1  s2  s3 "
+      "st1 st2 st3"
+      "s4  s5  s6 "
+      "st4 st5 st6";
+      place-items: center;
+      background-color: #e0ebeb;
+    border-radius: 25px;
+    margin: 10px;
+color: #e0ebeb;
+  }
+  .skills {
+    background-color: #ffffff;
+    border: #24527a 3px solid;
+    border-radius: 50px;
+    height: 90px;
+    width: 90px;
+  }
+  #title3 {
+    grid-area: t2;
+    border: #5dacbd 4px solid;
+background-color: #24527a;
+color: #e0ebeb;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 20px;
+    width: 70%;
+    text-align: center;
+    
+  }
+  .skills__title {
+    border-bottom: #5dacbd 3px solid;
+    border-left: #5dacbd 3px solid;
+    background-color: #24527a;
+    color: #e0ebeb;    
+    border-radius: 25px;
+    width: 60px;
+    padding: 10px;
+    margin: 15px 0px;
+  }
+#s__title01 {grid-area: st1;}
+#s__title02 {grid-area: st2;}
+#s__title03 {grid-area: st3;}
+#s__title04 {grid-area: st4;}
+#s__title05 {grid-area: st5;}
+#s__title06 {grid-area: st6;}
+#skill01 {grid-area: s1;}
+#skill02 {grid-area: s2;}
+#skill03 {grid-area: s3;}
+#skill04 {grid-area: s4;}
+#skill05 {grid-area: s5;}
+#skill06 { grid-area: s6;}
+  /*--------------------------------page4--------------------------------*/
+  #contact__div{
+    background-color: #a7bcb9;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh 88vh;
+    grid-template-areas:
+      "hd"
+      "main__sect04"
+      ;
+  } 
+  #main__sect04 {
+    grid-area: "main__sect04";
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+      "t4"
+      "c_form";
+      place-items: center;
+      background-color: #e0ebeb;
+      margin: 10px;
+      border-radius: 25px;
+  }
+  #title4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-area: t4;
+    border: #5dacbd 3px solid;
+    border-radius: 50px;
+    background-color: #24527a;
+    padding: 20px;
+    color: #e0ebeb;
+    width: 70%;
+    text-align: center;
+  }
+  #contact__form {
+    grid-area: c_form;
+    width: 80%;
+    height: 90%;
+   
+  }
+  #contact__container{
+  border: #5dacbd 3px solid;
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  background-color: #a7bcb9;
+  
+  }  input,textarea{
+    width: 80%;
+    padding: 15px 20px;
+    margin: 10px 30px;
+    border: 1px solid #5dacbd;
+    border-radius: 25px;
+  }
+  #send__btn {
+    width:100px;
+  }
+  
+}
