@@ -353,7 +353,9 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   #message {
-    height: 10vh;
+    height: 10vh;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   }
   #submit {
     width: 15%;
@@ -365,6 +367,8 @@
     background-color: #24527a;
     color: #e0ebeb;
     border-radius: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   }
   /*--------------------------------User Data--------------------------------*/
   #container_user_data {
